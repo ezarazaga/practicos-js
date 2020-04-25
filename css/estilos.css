@@ -1,0 +1,30 @@
+html,body{
+    padding:0px;
+    margin:0px;
+    font-size: 12px;
+    font-family: Helvetica;
+  }
+
+  .presentation{
+    background-color: aqua;
+    padding: 3%;
+    text-align: center;
+    background-size: cover;
+  }
+
+  .product .content{
+    background-color: red;
+    padding: 10px;
+    box-shadow: 0 0 1px #c1bcbc; 
+  }
+
+  .img_content{
+    text-align: center;
+  }
+
+.form{
+    text-align: center;
+    padding: 100px;
+    background-size: cover;
+    background-color: lawngreen;
+}
