@@ -15,7 +15,11 @@ window.onload= function(){
 
     function calcular(numero,valoringresado){
         if (cantidadIntentos>10){
-            alert('Usted ya supero los 10 intentos permitidos!');
+            let elemento = document.createElement("p");
+            let contenido = document.createTextNode("Usted ya supero los 10 intentos permitidos");
+            elemento.appendChild(contenido);
+            elemento.setAttribute("align", "center");
+            document.getElementById("result").appendChild(elemento);
             return false;
         }
 
@@ -24,12 +28,25 @@ window.onload= function(){
         if (numero==valoringresado) {
             alert('Felicitaciones Adivino el numero!');
         }else {
-            if (valoringresado>numero) 
-                alert(' Ups no tuvimos suerte!\n Elige un numero mas pequeño')
-             else alert('Ups no tuvimos suerte!\n Elige un numero mas grande');
-             console.log(listaIntentos);
-             console.log(numero);
+            if (valoringresado>numero){ 
+            let elemento = document.createElement("h1");
+            let contenido = document.createTextNode("Ups! nos tuvo suerte \n Elige un numero mas pequeño");
+            elemento.appendChild(contenido);
+            elemento.setAttribute("align", "center");
+            document.getElementById("result").appendChild(elemento);
+            }else{
+            let elemento = document.createElement("h1");
+            let contenido = document.createTextNode("Ups! nos tuvo suerte \n Elige un numero mas grande");
+            elemento.appendChild(contenido);
+            elemento.setAttribute("align", "center");
+            document.getElementById("result").appendChild(elemento);
+            console.log(listaIntentos);
+            console.log(numero);
+
+            }
+                             
         }
+           
     }
 
     btnprobar.addEventListener('click',function(){
