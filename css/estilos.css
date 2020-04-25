@@ -28,3 +28,7 @@ html,body{
     background-size: cover;
     background-color: lawngreen;
 }
+
+.result{
+  background-color: rgb(136, 47, 163);
+}
